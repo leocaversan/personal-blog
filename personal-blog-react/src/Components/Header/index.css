@@ -1,0 +1,41 @@
+*{
+    background-color: #242222;
+    color: #fff;
+}
+
+.header__container{
+    display:flex;
+    justify-content:space-between;
+    margin-top:2rem;
+    margin-right:2rem;
+    margin-left:2rem;
+    margin-bottom:2rem;
+    border-bottom:1px solid #fff;
+    
+}
+/* .header__container button {
+    background-color:transparent;
+    border:0px;
+    border-radius:9999px;
+} */
+.header__container img {
+    width:5rem;
+    height:5rem;
+}
+.header__container img:active {
+    margin-top:.1rem;
+}
+.header__img_icon{
+    background-color: #fff;
+    border-radius:9999px;
+    width:5rem;
+    height:5rem;
+}
+.header__central-menu{
+    width:40%;
+    display:flex;
+    justify-content:space-between;
+}
+.header__central-menu p:active {
+    
+}
