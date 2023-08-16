@@ -1,6 +1,7 @@
 import axios from "axios";
 
 const port = process.env.PORT || 4000;
+
 export const realizePrediction = async (comment: string) => {
     try {
         const response = await axios.request({

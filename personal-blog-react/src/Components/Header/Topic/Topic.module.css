@@ -1,0 +1,6 @@
+.header__central_menu:hover {
+    color: #92c8ff;
+}
+.header__central_menu:active {
+    margin-top:.01rem;
+}
