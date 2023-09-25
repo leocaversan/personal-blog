@@ -1,12 +1,12 @@
 import axios from "axios";
 
-const port = process.env.PORT || 4000;
+const port =  4000;
 
 export const realizePrediction = async (comment: string) => {
     try {
         const response = await axios.request({
             method: 'POST',
-            url: `http://localhost:${port}/predict`,
+            url: `http://localhost:${port}/api/predict`,
             data: {
                 "comment": comment,
             }
@@ -16,7 +16,7 @@ export const realizePrediction = async (comment: string) => {
         } else {
             return null;
         }
-    } catch (error) {
+        } catch (error) {
         console.error(error)
     }
 
@@ -25,7 +25,7 @@ export const getAcuracy = async () => {
     try {
         const response = await axios.request({
             method: 'GET',
-            url: `http://localhost:${port}/`,
+            url: `http://localhost:${port}/api/`,
         })
         if (response.status === 200) {
             return response.data;
